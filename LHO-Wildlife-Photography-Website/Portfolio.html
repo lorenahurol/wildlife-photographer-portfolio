@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Maryam Moliner Wildlife Photographer - Portfolio</title>
+	<meta name="description" content="Wildlife photography Portfolio">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ultra&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">	
+</head>
+
+<body>
+	<header class="main-header">
+		<a href="index.html" class="brand-logo">MaryamMoliner</a>
+		<button onclick="myFunction()" class="toggle"><i class="fa fa-bars"></i></button>
+	<nav class="menu">
+		<ul id="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Portfolio.html">Portfolio</a></li>
+			<li><a href="Workshops.html">Workshops</a></li>
+			<li><a class="button" href="Contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+	</header>
+	
+	<section class="page-title">
+		<h1>Portfolio</h1>
+		<p>Welcome to my photography porftolio page, here you can see my latest work. </p>
+		<p class="p2">Click on any image to see it full size.</p>
+		</section>
+		
+<!--- Original Gallery - All images credit: pexels.com--->
+
+		<div class="gallery">
+			<div>
+				<figure class="gallery-item" onclick="openLightbox();toSlide(1)">
+					<img src="images/Image01.jpg" width="224" height="335"  alt="Squirrel in the forest">
+					<figcaption class="caption"><h1>Squirrel in the forest</h1><p>Glasgow, Queen's park, 2022<p></figcaption>
+				</figure>
+				<figure class="gallery-item" onclick="openLightbox();toSlide(2)">
+					<img src="images/Image02.jpg" width="224" height="335" alt="Lion laying down">
+					<figcaption class="caption"><h1>Lion laying down</h1><p>Kenya, Safari tour, 2017<p></figcaption>
+				</figure>
+			</div>
+		
+			<div>
+				<figure class="gallery-item" onclick="openLightbox();toSlide(3)">
+					<img src="images/Image03.jpg" width="330" height="220" alt="White and brown Siberian husky">
+					<figcaption class="caption"><h1>White and brown Siberian husky</h1><p>Glasgow, Kelvingrove, 2022<p></figcaption>
+				</figure>
+				<figure class="gallery-item" onclick="openLightbox();toSlide(4)">
+					<img src="images/Image04.jpg" width="330" height="220" alt="Brown fox">
+					<figcaption class="caption"><h1>Brown fox</h1><p>Glasgow, Victoria park, 2019<p></figcaption>
+				</figure>
+				<figure class="gallery-item" onclick="openLightbox();toSlide(5)">
+					<img src="images/Image05.jpg" width="330" height="220" alt="Deer in the snow">
+					<figcaption class="caption"><h1>Deer in the snow</h1><p>Dublin, Phoenix park, 2021<p></figcaption>
+				</figure>
+			</div>
+		
+			<div>
+				<figure class="gallery-item" onclick="openLightbox();toSlide(6)">
+					<img src="images/Image06.jpg" width="224" height="335" alt="Two puffins">
+					<figcaption class="caption"><h1>Two puffins</h1><p>Bullers of Buchan, 2020<p></figcaption>
+				</figure>
+				<figure class="gallery-item" onclick="openLightbox();toSlide(7)">
+					<img src="images/Image07.jpg" width="224" height="335" alt="Baby bear">
+					<figcaption class="caption"><h1>Baby bear</h1><p>Canada, Great Bear Rainforest, 2015<p></figcaption>
+				</figure>
+			</div>
+			
+			<div>
+				<figure class="gallery-item" onclick="openLightbox();toSlide(8)">
+					<img src="images/Image08.jpg" width="330" height="220" alt="Red panda">
+					<figcaption class="caption"><h1>Red Panda</h1><p>Nepal, 2018<p></figcaption>
+				</figure>
+				<figure class="gallery-item" onclick="openLightbox();toSlide(9)">
+					<img src="images/Image09.jpg" width="330" height="220" alt="Highland Cow close up">
+					<figcaption class="caption"><h1>Highland Cow</h1><p>Glasgow, Pollok park, 2020<p></figcaption>
+				</figure>
+				<figure class="gallery-item" onclick="openLightbox();toSlide(10)">
+					<img src="images/Image10.jpg" width="330" height="220" alt="Owl on a tree branch">
+					<figcaption class="caption"><h1>Owl on a tree branch</h1><p>Alicante, Spain, 2019<p></figcaption>
+				</figure>
+			</div>
+		</div>
+		
+<!--- Modal Gallery - All images credit: pexels.com--->
+
+		<div id="Lightbox" class="modal">
+		  <span class="close pointer" onclick="closeLightbox()">&times;</span>
+		  <div class="modal-content">
+				<div class="slide">
+					<img src="images/Image01.jpg" class="image-slide" alt="Squirrel in the forest"/>
+					<div class="caption"><h1>Squirrel in the forest</h1><p>Glasgow, Queen's park, 2022<p></div>
+				</div>
+				<div class="slide">
+					<img src="images/Image02.jpg" class="image-slide" alt="Lion laying down"/>
+					<div class="caption"><h1>Lion laying down</h1><p>Kenya, Safari tour, 2017<p></div>
+				</div>    
+				<div class="slide">
+					<img src="images/Image03.jpg" class="image-slide" alt="White and brown Siberian Husky"/>
+					<div class="caption"><h1>White and brown Siberian husky</h1><p>Glasgow, Kelvingrove, 2022<p></div>
+				</div>
+				<div class="slide">
+					<img src="images/Image04.jpg" class="image-slide" alt="Brown fox"/>
+					<div class="caption"><h1>Brown fox</h1><p>Glasgow, Victoria park, 2019<p></div>
+				</div>
+				<div class="slide">
+					<img src="images/Image05.jpg" class="image-slide" alt="Deer in the snow"/>
+					<div class="caption"><h1>Deer in the snow</h1><p>Dublin, Phoenix park, 2021<p></div>
+				</div>    
+				<div class="slide">
+					<img src="images/Image06.jpg" class="image-slide" alt="Two puffins"/>
+					<div class="caption"><h1>Two puffins</h1><p>Bullers of Buchan, 2020<p></div>
+				</div>
+				<div class="slide">
+					<img src="images/Image07.jpg" class="image-slide" alt="Baby bear"/>
+					<div class="caption"><h1>Baby bear</h1><p>Canada, Great Bear Rainforest, 2015<p></div>
+				</div>
+				<div class="slide">
+					<img src="images/Image08.jpg" class="image-slide" alt="Red panda"/>
+					<div class="caption"><h1>Red Panda</h1><p>Nepal, 2018<p></div>
+				</div>    
+				<div class="slide">
+					<img src="images/Image09.jpg" class="image-slide" alt="Highland Cow close up"/>
+					<div class="caption"><h1>Highland Cow</h1><p>Glasgow, Pollok park, 2020<p></div>
+				</div>
+				<div class="slide">
+					<img src="images/Image10.jpg" class="image-slide" alt="Owl on a tree branch"/>
+					<div class="caption"><h1>Owl on a tree branch</h1><p>Alicante, Spain, 2019<p></div>
+				</div>
+		  
+				<a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+				<a class="next" onclick="changeSlide(1)">&#10095;</a>
+			</div>
+		  </div>
+		</div>
+
+	<footer>
+		<div class="footer">
+			<div class="footer-text">
+			<p>Maryam Moliner</p>
+			</div>
+			<ul class="socials">
+				<li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+				<li><a href="https://www.twitter.com/" class="fa fa-twitter"></a></li>
+				<li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
+			</ul>
+			<div class="footer-text">
+			<p>Glasgow, Scotland</p>
+			</div>
+		</div>
+	</footer>
+
+<script>
+
+<!---Modal--->
+
+	let slideIndex = 1;
+	showSlide(slideIndex);
+
+	function openLightbox() {
+	  document.getElementById('Lightbox').style.display = 'block';
+	}
+	function closeLightbox() {
+	  document.getElementById('Lightbox').style.display = 'none';
+	};
+	function changeSlide(n) {
+	  showSlide(slideIndex += n);
+	};
+
+	function toSlide(n) {
+	  showSlide(slideIndex = n);
+	};
+
+	function showSlide(n) {
+	  const slides = document.getElementsByClassName('slide');
+
+	  if (n > slides.length) {
+		slideIndex = 1;	
+	  };
+	  
+	  if (n < 1) {
+		slideIndex = slides.length;
+	  };
+
+	  for (let i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	  };
+	  
+	  slides[slideIndex - 1].style.display = 'block';
+	};
+	
+<!---Responsive Nav--->
+	
+	function myFunction() {
+	var x = document.getElementById("menu");
+	  if (x.style.display === "flex") {
+		x.style.display = "none";
+	  } else {
+		x.style.display = "flex";
+	  }
+	}
+	
+</script>
+
+</body>
+</html>
